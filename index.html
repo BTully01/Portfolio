@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bradley Tully Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <h1>Bradley Tully</h1>
+        <h2>Game Development Portfolio</h2>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm Bradley, a junior programmer with a passion for game development.</p>  
+        <p>I recently completed a Level 7 apprenticeship (master's equivalent) with Sumo Digital, where I honed my programming skills-primarily in C++, along with experience in Python, C#, and HTML.</p>  
+        <p>Throughout my apprenticeship, I gained hands-on experience in the full development lifecycle, collaborating closely with artists, designers, and fellow programmers. I contributed to the release of multiple titles across various platforms, including Steam and PlayStation.</p>  
+        <p>I am eager to continue growing as a developer and take on new challenges in the gaming industry.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <!--Zool-->
+        <h3>Zool Redimensioned</h3>
+        <iframe class="zool-video" src="https://www.youtube.com/embed/qg4ip2bKNOI" title="Zool Redimensioned Announce Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p class="zool-paragraph">Originally released in 1992 on the Amiga, <strong>Zool</strong> is a 2D platformer that captivated audiences with its precise controls, vibrant design, and challenging difficulty.</p>
+        <p class="zool-paragraph"><strong>Zool Redimensioned</strong> is a modern remaster of the classic game, retaining the original graphics while enhancing gameplay with updated mechanics and smoother controls.</p>
+        <p class="zool-paragraph">The game was developed entirely in C++ using a proprietary in-house game engine.</p>
+
+        <h3 class="contributions-header">My Contributions</h3>
+        <p>I worked on the secret game levels, accessible through the main game, where I recreated the player class and enemy AI. This involved faithfully replicating classic enemy behaviors and refining player controls to maintain the original feel of the game.</p>
+        <p>Additionally, I contributed to the PlayStation release of the game, where I primarily designed the architecture for the party game modes. I created a flexible base class and a game mode manager to ensure consistency across different party modes. This system managed shared variables such as player scores, controller assignments, and other game-wide data.</p>
+        <p>I also led the implementation of PlayStation trophies, adapting the existing Steam achievement framework to support PlayStation's requirements. This involved developing a centralized trophy management system that allowed various parts of the game to trigger trophy unlocks. I collaborated closely with artists to create trophy artwork that met PlayStation's technical specifications.</p>
+        <p>Post-release, I worked with the University of Sheffield to integrate analytics into <strong>Zool Redimensioned</strong>. I designed a centralized framework to collect gameplay data, package it into an HTTP request, and send it to a Sumo-owned server for analysis. Given the sensitive nature of data collection, I ensured compliance with GDPR by implementing a system that generated unique but non-identifiable user IDs, allowing data tracking without compromising user privacy.</p>
+        <p>
+            A research paper was published about the findings of the data collected through these analytics.
+            <a href="https://www.researchgate.net/publication/381409324_Experiments_in_games_modding_the_Zool_Redimensioned_warning_system_to_support_players%27_skill_acquisition_and_attrition_rate" target="_blank">
+                Here is a link to the research paper.
+            </a>
+        </p>
+
+        <a class="store-button" href="https://store.steampowered.com/app/1647730/Zool_Redimensioned/" target="_blank">
+            Steam Steam Page
+        </a>
+        <a class="store-button" href="https://store.playstation.com/en-gb/product/EP7072-CUSA37356_00-ZOOLREDIMENSIOND" target="_blank">
+            PlayStation Store Page
+        </a>
+        <div class="divider"></div>
+
+        <!--Oil Strike 75-->
+        <h3 class="project-header">Oil Strike 75</h3>
+        <iframe class="oil-strike-video" src="https://www.youtube.com/embed/ArRnO5fQWcg" title="Oil Strike 75" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        <p><strong>Oil Strike 75</strong> was developed as a promotional game to tease the release of the then-upcoming title, <em>Still Wakes the Deep</em>. The game was built entirely in C++ using a proprietary in-house game engine and intergrated with the SteamAPI for its Steam functionality and offical release on the Steam marketplace.</p>
+
+        <h3 class="contributions-header">My Contributions</h3>
+        <p>I was responsible for implementing Steam achievements into the game. This involved collaborating with the designers of <em>Still Wakes the Deep</em> to ensure the achievements aligned with those in the main game. Additionally, the achievements were designed to serve as player statistics, tracking engagement metrics such as level drop-off rates.</p>
+        <p>My role required working closely with other programmers to understand different aspects of the game and determine the best locations in the codebase to track achievement progress. I also integrated the Steam API into the project, considering its implementation across various parts of the game.</p>
+        <p>Beyond programming, I collaborated with artists to create achievement icons that met Steam's technical requirements. I was responsible for uploading these assets to SteamWorks, managing achievement configurations, and ensuring seamless integration. Additionally, I created and managed private testing branches of the game, allowing QA testers to validate achievement functionality before release.</p>
+
+        <a class="store-button" href="https://store.steampowered.com/app/2740090/Oil_Strike_75/" target="_blank">
+            Steam Store Page
+        </a>
+        <div class="divider"></div>
+
+        <!--Plant It-->
+        <h3 class="project-header">Plant It</h3>
+        <iframe class="plant-it-video" src="https://www.youtube.com/embed/mYeD4bkqJPU" title="Plant It" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p><strong>Plant It</strong> is a small project I worked on as part of a team of programmers. Inspired by crazy golf, the game aimed to replicate a similar feeling while also allowing us to experiment with advanced algorithms in a real-time environment.</p>
+
+        <h3>My Contributions</h3>
+        <p>My primary focus was developing the collision system for the game, particularly the interaction between the ball (represented as a seed) and the terrain. Given that the ground featured varied and complex terrain, I implemented a <strong>Ray-Triangle Intersection (RTI)</strong> algorithm to handle precise collisions between the ball and the environment.</p>
+        <p>To optimize performance and ensure efficient collision detection, I utilized <strong>Axis-Aligned Bounding Boxes (AABB)</strong> for interactions between the ball and other game objects. This approach significantly reduced computational overhead, as testing every individual triangle in high-polygon models with RTI would have been impractical. By combining RTI for ground collisions and AABB for object interactions, I created a streamlined and performant collision system that maintained accuracy while keeping processing costs manageable.</p>
+        <p>This project allowed me to refine my understanding of collision detection techniques and optimization strategies in game development while contributing to a creative and engaging gameplay experience.</p>
+        <div class="divider"></div>
+
+
+        <!--Spyder-->
+        <h3 class="project-header">Spyder Design Patterns</h3>
+        <iframe class="spyder-video" src="https://www.youtube.com/embed/BEZSEmeIloA" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p>I was tasked with adapting a small game to demonstrate object-oriented design principles for a group of new apprentices.</p>
+        <p>For this, I restructured the original <strong>Spyder</strong> game, originally a simple project from the PlayBuffer manual, by organizing the code into an object-oriented design pattern. I introduced classes for each game object, ensuring a clear and modular structure that highlighted best practices in software design.</p>
+        <a class="github-button" href="https://github.com/sumo-digital-academy/SpyWire-OOD" target="_blank">
+            GitHub Page
+        </a>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: bradley.tully@outlook.com</p>
+        <!--<p>linkedin: Coming soon</p>-->
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Bradley Tully</p>
+    </footer>
+</body>
+</html>
